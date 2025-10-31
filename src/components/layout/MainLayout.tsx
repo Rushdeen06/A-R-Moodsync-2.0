@@ -46,7 +46,7 @@ const MainLayout: React.FC = () => {
   const styles = useStyles()
 
   return (
-    <Router basename="/MoodTrackingApp">
+    <Router basename="/A-R-Moodsync-2.0">
       <div className={styles.container}>
         <div className={styles.sidebar}>
           <Sidebar />
