@@ -1,0 +1,52 @@
+{
+  "name": "mood-tracking-app",
+  "version": "1.0.0",
+  "description": "A mood tracking application with Microsoft Teams-like interface",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.117.1",
+    "@fluentui/react-components": "^9.47.2",
+    "@fluentui/react-icons": "^2.0.220",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@types/react-router-dom": "^5.3.3",
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.30.1",
+    "recharts": "^2.8.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/uuid": "^9.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "keywords": [
+    "mood-tracking",
+    "teams-interface",
+    "react",
+    "typescript",
+    "fluent-ui"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
