@@ -26,7 +26,8 @@ export default defineConfig({
           fluent: ['@fluentui/react-components', '@fluentui/react-icons']
         }
       }
-    }
+    },
+    copyPublicDir: true
   },
   publicDir: 'public'
 })
