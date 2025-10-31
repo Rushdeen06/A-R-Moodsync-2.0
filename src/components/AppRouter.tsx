@@ -8,12 +8,12 @@ import SettingsPage from '../pages/SettingsPage'
 const AppRouter: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/mood" replace />} />
+      <Route path="/" element={<MoodChannelView />} />
       <Route path="/mood" element={<MoodChannelView />} />
       <Route path="/analytics" element={<AnalyticsPage />} />
       <Route path="/team" element={<TeamMembersPage />} />
       <Route path="/settings" element={<SettingsPage />} />
-      <Route path="*" element={<Navigate to="/mood" replace />} />
+      <Route path="*" element={<MoodChannelView />} />
     </Routes>
   )
 }
