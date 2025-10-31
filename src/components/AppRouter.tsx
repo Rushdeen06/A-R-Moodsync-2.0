@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import MoodChannelView from './MoodChannelView'
 import AnalyticsPage from '../pages/AnalyticsPage'
 import TeamMembersPage from '../pages/TeamMembersPage'
