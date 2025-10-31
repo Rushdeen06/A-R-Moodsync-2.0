@@ -7,18 +7,11 @@
     <meta name="description" content="A professional mood tracking application with Microsoft Teams-like interface">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E😊%3C/text%3E%3C/svg%3E">
     <script>
-        // GitHub Pages SPA redirect
-        (function(l) {
-            if (l.search[1] === '/' ) {
-                var decoded = l.search.slice(1).split('&').map(function(s) { 
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
-            }
-        }(window.location))
+        // GitHub Pages SPA redirect solution
+        // Store the current path and redirect to index.html with the path as a query parameter
+        sessionStorage.redirect = location.href;
     </script>
+    <meta http-equiv="refresh" content="0;URL='./index.html'">
 </head>
 <body>
     <div id="root"></div>
